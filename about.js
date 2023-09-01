@@ -36,7 +36,5 @@ var aText = new Array(
      } else {
       setTimeout("typewriter()", iSpeed);
      }
-    }
-    
-    
+    }    
     typewriter();

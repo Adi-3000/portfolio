@@ -91,7 +91,7 @@ a {
         height: 50%;
         font-family: 'Raleway', sans-serif;
         font-size: 2.7vw;
-        color: #aaa
+        color: #aaa;
     }
 
 
@@ -157,18 +157,18 @@ a {
 /*Skills*/
 
 .skills {
-    padding-top: 10%;
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     transition: all 0.4s ease-in-out;
-    animation: hasHovered 1ms paused;
     animation-fill-mode: forwards;
     height: 100vh;
 
     .title {
+        padding-bottom: 10%;
 
         font-family: Hack, monospace;
         font-size: 42px;
@@ -186,7 +186,6 @@ a {
     }
 
     .skillset {
-        padding: 10%;
         display: flex;
         flex-flow: row wrap;
         gap: 50px;
