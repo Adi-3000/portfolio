@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main" >
+        <div class="page" id="card">
+            
+            <section class="question">
+                <span class="timer" id='timer' >1</span>
+                <p id="ques" >  
+                loading...... please wait..
+            </p>
+            <section class="underline"></section>
+            
+            </section>
+            <section class="options">
+                <button id="1" class="opt" onclick="choice(this)">opt1</button>
+                <button id="2" class="opt" onclick="choice(this)">opt2</button>
+                <button id="3" class="opt" onclick="choice(this)">opt3</button>
+                <button id="4" class="opt" onclick="choice(this)">opt4</button>
+            </section>
+        
+        </div>
+        <div class="nav">
+            <button id="prev" onclick="reset()">reset </button>
+            <button id="next" onclick="next()">next</button>
+        </div>
+        
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
