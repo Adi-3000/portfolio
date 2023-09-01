@@ -50,7 +50,6 @@
     formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || "meadityaraj39@gmail.com"; // no email by default
 
-    console.log(formData);
     return formData;
   }
 
@@ -71,13 +70,12 @@
       xhr.open('POST', url);
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function() {
-          console.log(xhr.status, xhr.statusText);
-          console.log(xhr.responseText);
+          window.location.href="contact.html";
           var formElements = form.querySelector(".form-elements")
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
-          var thankYouMessage = form.querySelector(".thankyou_message");
+          var thankYouMessage = document.getElementById("thanks");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
           }
@@ -106,3 +104,6 @@
     }
   }
 })();
+document.getElementById("form").onsubmit = function(){
+  location.reload(true);
+}
