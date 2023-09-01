@@ -1,0 +1,116 @@
+.main {
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600fr;
+  height: 600px;
+
+}
+
+.calci {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 60%;
+  max-width: 300px;
+  background-color: #f7f7f1;
+  border-radius: 12%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  ;
+}
+
+.input-container {
+  position: relative;
+  margin: 30px auto;
+  width: 80%;
+  height: 30px;
+  display: flex;
+}
+
+.input-container input[type="text"] {
+  font-size: 20px;
+  color: rgb(82, 79, 79);
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 08px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="text"]:valid~.label {
+  top: -15px;
+  font-size: 13px;
+  color: #414141a9;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #414141a9;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline {
+
+  transform: scaleX(1);
+}
+
+/*buttons*/
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 10%;
+}
+
+button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  margin-right: 5px;
+  width: 20%;
+  background-color: white;
+  color: rgb(36, 34, 34);
+  border-radius: 10em;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 50ms ease-in-out;
+  border: 1px solid black;
+  box-shadow: 2px 5px 0 0 rgba(27, 27, 27, 0.82);
+}
+
+button:hover {
+  transform: translateY(1px) translateX(0.5px);
+  box-shadow: 1.5px 4px 0 0 black;
+}
+
+button:active {
+  transform: translateY(4px) translateX(2px);
+  box-shadow: 0 0 0 0 black;
+}
+;
