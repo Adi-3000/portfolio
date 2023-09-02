@@ -94,7 +94,7 @@ a {
    
    .card:hover {
     
-    box-shadow: -12px 12px 2px -1px rgba(11, 11, 11, 0.2);
+    /*box-shadow: -12px 12px 2px -1px rgba(11, 11, 11, 0.2);*/
    }
    img {
        position : relative;
