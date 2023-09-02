@@ -37,11 +37,13 @@ nav {
     display: flex;
 
     >li {
-      margin: 50px;
+      margin: 2.2vw;
+
 
       >a {
         text-decoration: none;
-        font-size: 26px;
+        font-size: 1.4vw;
+
         font-weight: 400;
         transition: all 0.4s ease-in-out;
         position: relative;

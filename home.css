@@ -16,6 +16,7 @@ body{
 }
 
 .nav {
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -32,11 +33,11 @@ nav {
         display: flex;
 
         >li {
-            margin: 50px;
+            margin: 2.2vw;
 
             >a {
                 text-decoration: none;
-                font-size: 26px;
+                font-size: 1.4vw;
                 font-weight: 400;
                 transition: all 0.4s ease-in-out;
                 position: relative;
@@ -77,11 +78,11 @@ a {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 10vh;
 
 }
 .card {
-    margin-left: 50px;
+    margin-left: 5%;
     align-self: flex-start;
     cursor: pointer;
     width: 40%;
@@ -118,7 +119,7 @@ a {
     width: 40%;
     font-family: 'Raleway', sans-serif;
     padding: 3em 2em;
-    font-size: 18px;
+    font-size: 1vw;
     color: #aaa
   }
   
